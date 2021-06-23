@@ -2,23 +2,25 @@ body {
     background-color: azure;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: blue;
 }
 
-.image-row{
+.image-row {
     display: flex;
 }
 
-.image-col{
+.image-col {
     padding: 5px;
 }
-.image-row img{
+
+.image-row img {
     height: 20vw;
     height: 20vw;
 }
 
-strong{
+.strong-word {
     font-family: 'Courier New', Courier, monospace;
     color: burlywood;
 }
