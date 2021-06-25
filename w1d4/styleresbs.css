@@ -1,0 +1,39 @@
+.navbar {
+    background-color: darkolivegreen;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+#head {
+    background-color: lightblue;
+    margin: 0px;
+    padding: 2px;
+}
+
+#col1 {
+    background-color: azure;
+    height: 300px;
+}
+
+#col3 {
+    background-color: beige;
+    height: 300px;
+}
+
+#col2 {
+    background-color: lightgray;
+    height: 300px;
+}
+
+footer {
+    background-color: darkolivegreen;
+    padding: 10px;
+}
+
+#menus {
+    background-color: darkolivegreen;
+    padding: 10px;
+}
