@@ -1,0 +1,20 @@
+fieldset legend {
+    font-weight: bold;
+}
+
+#textarea {
+    text-align: right;
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+.bling-text {
+    text-decoration: underline;
+    color: green;
+    background-image: url("http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg");
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+}
