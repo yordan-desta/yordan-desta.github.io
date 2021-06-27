@@ -28,30 +28,34 @@ window.onload = function() {
         let wordsA = tArea.value.split(" ");
 
         let newWord = wordsA.map((elem) => {
-            if (elem[0].toLowerCase() != 'a' &&
-                elem[0].toLowerCase() != 'e' &&
-                elem[0].toLowerCase() != 'o' &&
-                elem[0].toLowerCase() != 'u') {
 
-                let w = elem.split('');
+            let newWord = [];
+            wordsA.map((elem) => {
+                if (elem[0].toLowerCase() != 'a' &&
+                    elem[0].toLowerCase() != 'e' &&
+                    elem[0].toLowerCase() != 'o' &&
+                    elem[0].toLowerCase() != 'u') {
 
-                let temp = w[0];
+                    let w = elem.split('');
+
+                    let temp = w[0];
 
 
-                w[0] = w[w.length - 1];
-                w[w.length - 1] = temp;
+                    w[0] = w[w.length - 1];
+                    w[w.length - 1] = temp;
 
 
-                w.push("-ay");
-                return w.join('');
+                    w.push("-ay");
+                    return w.join('');
 
-            } else {
-                return elem + '-ay';
-            }
-        });
+                } else {
+                    elem += "-ay";
+                }
+            });
 
-        tArea.value = newWord.join(" ");
-    }
+            tArea.value = newWord.join(" ");
+        })
+    };
 
     let malk = document.getElementById("malkovitch");
 
@@ -67,5 +71,4 @@ window.onload = function() {
 
         tArea.value = newW;
     }
-
 }
