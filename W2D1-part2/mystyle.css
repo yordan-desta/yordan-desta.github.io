@@ -1,3 +1,7 @@
+#form-container {
+    padding: 20px;
+}
+
 #form-container>form {
     display: grid;
     grid-template-columns: auto;
@@ -31,4 +35,8 @@ button {
     padding: 8px;
     color: white;
     width: 100px;
+}
+
+#url {
+    margin-top: 10px;
 }
