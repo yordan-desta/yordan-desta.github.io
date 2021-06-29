@@ -18,7 +18,7 @@
             <span id="email-note">We'll never share your email with anyone else.</span>
             <label class="title">Password</label>
 
-            <input class="input-box" type="password" name="password" placeholder="Password" pattern=".{10,}[a-z]+[A-Z]+[0-9]+." />
+            <input class="input-box" type="password" name="password" placeholder="Password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z\d].{10,}" />
 
             <label class="title" id="url">Url</label>
             <input class="input-box" type="text" name="url" placeholder="Enter Url" pattern="https?://.+" />
