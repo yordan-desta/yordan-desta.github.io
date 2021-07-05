@@ -84,8 +84,6 @@ describe("toString", function() {
     })
 });
 
-///banks test
-
 describe("addAccount", function() {
     it("adds account to bank and return count of accounts", function() {
         let bank = new Bank();
@@ -138,7 +136,6 @@ describe("accountReport", function() {
     })
 });
 
-//endOfMonth
 
 describe("endOfMonth", function() {
     it("return empty endOfMonth report for account", function() {
