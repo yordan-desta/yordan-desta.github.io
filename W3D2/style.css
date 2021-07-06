@@ -26,9 +26,8 @@ button {
     width: 60px;
 }
 
-fieldset {
+#fields {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 100px;
 }
