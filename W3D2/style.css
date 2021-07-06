@@ -1,0 +1,34 @@
+.circle {
+    position: absolute;
+    top: 50%;
+}
+
+#container {
+    margin-top: 200px;
+    position: relative;
+}
+
+#circles {
+    height: 200px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#config {
+    position: absolute;
+    left: 200px;
+}
+
+button {
+    background-color: green;
+    width: 60px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100px;
+}
