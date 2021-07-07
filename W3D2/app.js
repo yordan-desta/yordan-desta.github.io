@@ -28,6 +28,8 @@ $(function() {
 
     function makeCircles() {
 
+        let _span = $("<span>");
+
         const contWid = parseInt($("#circles").width());
         let offset = 0;
         let left = 0;
@@ -61,10 +63,12 @@ $(function() {
                 $(this).css("opacity", "100%")
             });
 
-            $("#circles").append(cr);
+            _span.append(cr);
 
             left += 50;
         }
+
+        $("#circles").append(_span);
     }
 
     function start() {
