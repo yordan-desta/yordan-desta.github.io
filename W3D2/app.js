@@ -54,9 +54,12 @@ $(function() {
                 "height": (circleRad * 2) + "px"
             });
 
-            cr.click(function() {
-                $(this).hide();
-            })
+            cr.click(function() { $(this).remove() });
+            cr.hover(function() {
+                $(this).css("opacity", "50%")
+            }, function() {
+                $(this).css("opacity", "100%")
+            });
 
             $("#circles").append(cr);
 
