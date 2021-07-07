@@ -53,13 +53,13 @@ $(function() {
                     "width": (circleRad * 2) + "px",
                     "height": (circleRad * 2) + "px"
                 },
-                "click": function() { $(this).remove() }
+                "click": function() { this.remove() }
             });
 
             cr.hover(function() {
-                $(this).css("opacity", "50%")
+                this.css("opacity", "50%")
             }, function() {
-                $(this).css("opacity", "100%")
+                this.css("opacity", "100%")
             });
 
             _span.append(cr);
