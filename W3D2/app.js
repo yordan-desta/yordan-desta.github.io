@@ -45,18 +45,17 @@ $(function() {
 
 
             const cr = $("<div>", {
-                "class": "circle"
+                "class": "circle",
+                "css": {
+                    "left": left + "px",
+                    "background-color": getRandomColor(),
+                    "border-radius": circleRad + "px",
+                    "width": (circleRad * 2) + "px",
+                    "height": (circleRad * 2) + "px"
+                },
+                "click": function() { $(this).remove() }
             });
 
-            cr.css({
-                "left": left + "px",
-                "background-color": getRandomColor(),
-                "border-radius": circleRad + "px",
-                "width": (circleRad * 2) + "px",
-                "height": (circleRad * 2) + "px"
-            });
-
-            cr.click(function() { $(this).remove() });
             cr.hover(function() {
                 $(this).css("opacity", "50%")
             }, function() {
