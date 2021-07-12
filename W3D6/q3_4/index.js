@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 
+const shoppingcart = require('./shoping-cart');
+
 const app = express();
 app.use(express.urlencoded());
 
@@ -18,6 +20,8 @@ app.get('/', (req, res, next) => {
     };
     res.render('product', { product });
 });
+
+app.use(shoppingcart);
 
 
 app.listen(3000);
