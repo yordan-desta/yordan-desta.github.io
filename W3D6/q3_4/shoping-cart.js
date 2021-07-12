@@ -21,7 +21,7 @@ router.get('/shoppingcart', (req, res, next) => {
 });
 
 router.post('/addToCart', (req, res, next) => {
-    res.end('form submitted');
+    res.redirect('/shoppingcart');
 });
 
 
