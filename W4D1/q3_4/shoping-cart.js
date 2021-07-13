@@ -5,14 +5,11 @@ const router = express.Router();
 router.get('/shoppingcart', (req, res, next) => {
 
     const products = req.session.cart;
-    console.log(req.session.cart);
-
     res.render('shoppingcart', { products });
 
 });
 
 router.post('/addToCart', (req, res, next) => {
-    console.log(req.body);
 
     if (!req.session.cart[req.body.name]) {
 

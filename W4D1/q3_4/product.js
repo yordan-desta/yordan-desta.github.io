@@ -21,7 +21,6 @@ router.get('/car', (req, res, next) => {
         description: "GMC",
         price: 12.00
     };
-
     res.render('product', { product });
 });
 
