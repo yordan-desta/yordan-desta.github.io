@@ -7,7 +7,7 @@ const product = require('./product');
 
 const app = express();
 app.use(session({ secret: 'VerySecret' }));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded());
 
 app.use((req, res, next) => {
     if (!req.session.cart) {

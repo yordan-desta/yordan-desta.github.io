@@ -11,6 +11,8 @@ router.get('/shoppingcart', (req, res, next) => {
 
 router.post('/addToCart', (req, res, next) => {
 
+    console.log(req.body);
+
     if (!req.session.cart[req.body.name]) {
 
         req.session.cart[req.body.name] = {
@@ -23,7 +25,7 @@ router.post('/addToCart', (req, res, next) => {
         req.session.cart[req.body.name].quantity += 1;
     }
 
-    res.redirect('/shoppingcart');
+    res.send(200, Object.keys(req.session.cart).length);
 });
 
 

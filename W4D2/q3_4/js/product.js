@@ -10,14 +10,20 @@ $(function() {
     hideSuccessMsg();
 
     $('#productForm').submit(function() {
-        const price = $('#price').val();
-        const name = $("#name").val();
+        const price = $('input[name="price"]').val();
+        const name = $('input[name="name"]').val();
+        console.log(name, price);
 
         $.post('/addToCart', { "price": price, "name": name })
             .done(function(data) {
                 showSuccessMsg();
                 setTimeout(hideSuccessMsg, 3000);
-            }).fail(function(x, s, ex) { console.log(x + s + ex) });
+
+                const res = JSON.parse(data);
+
+                $('#linktocart').text(res + " item/s in cart");
+
+            }).fail(function(x, s, ex) { console.log(ex) });
 
         return false;
     })
